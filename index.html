@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo"><b>Domine Git e GitHub</b></h1>
+            <h1 strong class="titulo_destaque">Seu Guia Completo para Controle de Versão e Colaboração de Código!</strong></h1>
+            <p class="apresentacao__conteudo__texto"> Bem-vindo ao nosso guia! Aqui, você descobrirá tudo o que 
+                precisa saber sobre <b>Git e GitHub</b>, desde os conceitos básicos até as práticas avançadas. 
+                Se você deseja dominar o controle de versão e melhorar sua colaboração em projetos, 
+                está no lugar certo. Explore nossos tutoriais, dicas e truques para levar suas habilidades ao 
+                próximo nível. Comece agora e <b><mark>transforme</mark></b> a forma como você gerencia seus códigos!.</p>
+        
+        </section>
+        <img class= "apresentacao__imagemperfil" src="./img/LogoGitAcademy3.png" alt="Logotipo do site Git Academy">
+    </div>
+    <div class="conteudo">
+        <h1 class="texto_meio">GitHub</h1>
+        <section class="quadrados_container">
+            <div class="quadrado">
+              <h2>Crie uma conta no GitHub</h2>
+              <p>Para começar a usar o GitHub, será necessário criar uma conta pessoal gratuita</p>
+              <p>Pra isso, siga os passos:</p>
+              <p>
+                1. Navegue até a página 
+                <a href="https://github.com/">do GitHub</a>.
+              </p>
+              <p>
+                2. Clique em Inscreva-se.
+              </p>
+              <p>
+                3. Siga os próximos passos
+              </p>
+              <p>
+                4. Verifique seu e-mail
+              </p>
+              <p>
+                5. Pronto! Foi criado sua conta com sucesso!
+              </p>
+            </div>
+            <div class="quadrado">
+              <h2>Criando seu 1º repositório</h2>
+              <p>
+                Agora que possui uma conta, você poderá criar seu próprios repositórios e começar a ter um repositório
+                remoto e ter controle das versões dos seus futuros projetos 
+              </p>
+              <p>
+                Para ter um tutorial completo e com imagens, sugerimos que siga as orientações que estão
+                <a href="https://docs.github.com/pt/get-started/start-your-journey/hello-world">que estão no site do GitHub</a>
+                ou siga o tutorial do vídeo da nossa seção 
+                <a href="index.html#Pratica">'Veja na prática'</a>
+              </p>
+            </div>
+            <div class="quadrado">
+              <h2>Vantagens e Desvantagens</h2>
+              <p>
+                O GitHub é uma plataforma muito popular 
+                entre desenvolvedores por várias razões. Confira algumas vantagens e desvantagens de utilizá-lo:
+              </p>
+              <h3>Vantagens</h3>
+              <ul>
+                <li>
+                    Facilita o trabalho em equipe
+                </li>
+                <li>
+                  Integração com outras Ferramentas
+                </li>
+                <li>
+                  Comunidade ativa
+                </li>
+              </ul>
+              <h3>Desvantagens</h3>
+              <ul>
+                <li>
+                  Falta de Suporte para Algumas Linguagens e Frameworks
+                </li>
+                <li>
+                  Dependência da Conectividade com a Internet
+                </li>
+              </ul>
+            </div>
+        </section>
+        <h1 class="texto_meio2">Git</h1>
+        <div class="container-tabela">
+          <table>
+            <thead>
+              <tr>
+                <th><b>Comandos</b></th>
+                <th><b>Descrição</b></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>init</td>
+                <td>Inicia um repositório vazio na pasta atual, criando um diretório oculto <i><small>.git</small></i>
+                  com subdiretórios para objetos, referências e arquivos de template. Este é,
+                  geralmente, o primeiro comando a ser executado ao iniciar um novo projeto. </td>
+              </tr>
+              <tr>
+                <td>clone</td>
+                <td>Cria uma cópia de repositórios remotos. Usado geralmente para obter um
+                  clone de desenvolvimento local a partir de um repositório Git de origem.
+                </td>
+              </tr>
+              <tr>
+                <td>add</td>
+                <td>Adiciona mudanças feitas nos arquivos ao <i>stage</i> (área de preparação),
+                  preparando-os para serem incluídos no próximo <i>commit</i>.
+                </td>
+              </tr>
+              <tr>
+                <td>commit</td>
+                <td>“Captura” o estado do projeto naquele momento a partir das mudanças
+                  adicionadas ao <i>stage</i>, criando um ponto ao qual se pode retornar posteriormente. A
+                  execução desse comando abrirá um editor de texto para que um comentário seja
+                  escrito a respeito do <i>commit</i>. Essas capturas (commits) formam um histórico do
+                  projeto e podem ser acessadas a qualquer momento.                      
+                </td>
+              </tr>
+              <tr>
+                <td>checkout</td>
+                <td>Permite a alternância entre versões diferentes de arquivos, <i>commits</i>
+                  e ramificações.<br>
+                  <b>git checkout 'identificador'</b> atualizará os arquivos no diretório atual para que
+                  fiquem iguais às suas versões na ramificação ou <i>commit</i> especificado.
+                </td>
+              </tr>
+              <tr>
+                <td>branch</td>
+                <td>Utilizado para listar, criar e deletar ramificações do projeto. <i>Branches</i>
+                  (ou ramificações) são linhas independentes de desenvolvimento, que, quando criadas,
+                  compartilham o mesmo histórico da ramificação da qual derivam. 
+                  <table>
+                    <thead>
+                      <tr>
+                        <th><b>git branch</b></th>
+                        <th><b>git branch [nome-da-branch]</b></th>
+                        <th><b>git branch -d [nome-da-branch]</b></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          Exibe uma lista das ramificações atuais do projeto.
+                        </td>
+                        <td>
+                          Cria uma ramificação com o nome especificado.
+                        </td>
+                        <td>
+                          Exclui a ramificação com o nome especificado.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>merge</td>
+                <td>
+                  Integra as ramificações criadas pelo <i>git branch</i> em uma ramificação
+                  única. A ramificação atual será atualizada para incorporar as atualizações criadas pelo
+                  comando, enquanto a ramificação alvo permanecerá inalterada. 
+                </td>
+              </tr>
+              <tr>
+                <td>remote</td>
+                <td>Permite criar, ver e excluir conexões de seu repositório local com um ou
+                  mais repositórios remotos.
+                  <table>
+                    <thead>
+                      <tr>
+                        <th><b>git remote add <i>'nome' 'URL'</i></b></th>
+                        <th><b>git remote rm <i>'nome'</i></b></th>
+                        <th><b>git remote rename <i>'nome-antigo' 'nome-novo'</i></b></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          Cria uma conexão com um repositório remoto
+                          indicado pela URL, criando um nome de referência que poderá ser utilizado em
+                          chamadas posteriores dessa conexão.
+                        </td>
+                        <td>
+                          Exclui uma conexão com o repositório remoto
+                          referenciado por “nome”.
+                        </td>
+                        <td>
+                          Renomeia a conexão anteriormente indicada por “nome-antigo” com 
+                          “nome-novo”.
+                        </td>
+                      </tr>
+                    </tbody>
+                   </table>
+                </td>
+              </tr>
+              <tr>
+                <td>fetch</td>
+                <td>
+                  Baixa as últimas atualizações de <i>commits</i>, arquivos e referências de um
+                  repositório remoto ao qual se está conectado para seu repositório local, sem integrá-lo
+                  ao seu diretório. Deve ser seguido do comando “git checkout” para acessar o
+                  conteúdo baixado.
+                </td>
+              </tr>
+              <tr>
+                <td>show</td>
+                <td>
+                  Seguido do parâmetro <i>[commit]</i>, exibe informações a respeito de um
+                  <i>commit</i>, tais como as alterações introduzidas por ele no histórico, o nome do autor, a
+                  data e hora de sua criação, seu comentário etc. Também pode ser usado para detalhar
+                  outros objetos, como arquivos e tags.
+                </td>
+              </tr>
+              <tr>
+                <td>push</td>
+                <td>
+                  Envia <i>commits</i> de um repositório local para um repositório remoto. Após
+                  um repositório local ter sido modificado, um comando <i>“push”</i> compartilha suas
+                  modificações com os membros da equipe remota.<br>
+                  Seguido dos parâmetros <i>[remote] [branch]</i>, envia a ramificação especificada junto com
+                  todos os <i>commits</i> e objetos internos necessários. Isso cria uma ramificação
+                  local no repositório de destino. 
+                </td>
+              </tr>
+              <tr>
+                <td>pull</td>
+                <td>
+                  Busca e baixa repositórios remotos, atualizando o repositório local para que
+                  ele seja igual ao repositório baixado. A diferença entre <i>git fetch</i> e <i>git pull</i> é que este faz
+                  o <i>merge</i> automático do repositório remoto baixado com o repositório local.
+                </td>
+              </tr>
+              <tr>
+                <td>revert</td>
+                <td>
+                  Cria um novo <i>commit</i> revertendo as alterações de um <i>commit</i> antigo
+                  especificado, mantendo o histórico do projeto. Os indicadores de referência são
+                  atualizados para apontar para o <i>commit</i> de reversão novo, colocando-o na ponta da
+                  ramificação.
+                </td>
+              </tr>
+              <tr>
+                <td>stash</td>
+                <td>
+                  Arquiva alterações feitas em seu diretório que ainda não foram
+                  submetidas ao <i>commit</i>, permitindo que outras ramificações ou <i>commits</i> sejam
+                  acessados sem perder as alterações feitas anteriormente, que podem ser acessadas
+                  pelos seguintes comandos:
+                  <table>
+                    <thead>
+                      <th><b>git stash apply</b></th>
+                      <th><b>git stash pop</b></th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          Reaplica as mudanças arquivadas pelo <i>git stash</i> anterior,
+                          mantendo-as ainda arquivadas no <i>stash</i>.
+                        </td>
+                        <td>
+                          Reaplica as mudanças arquivadas pelo <i>git stash</i> anterior,
+                          limpando a lista de <i>stash</i>.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>status</td>
+                <td>
+                  Exibe informações a respeito do status atual do seu repositório e dos
+                  arquivos em relação à ramificação atual. As informações exibidas são:<br><br>
+                  <dl>
+                    <dt>Em qual ramificação do projeto você está
+                      trabalhando no momento.</dt>
+                    <dt><br>Todas as mudanças que foram feitas e que
+                      estão prontas para serem submetidas ao <i>commit</i>.</dt>
+                    <dt><br>As mudanças feitas nos arquivos que
+                      ainda não foram adicionadas.</dt>
+                    <dt><br>Os arquivos existentes no diretório de trabalho sobre os
+                      quais o Git ainda não foi informado.</dt>
+                    <dt><br>Caso seu repositório esteja conectado a um
+                      repositório remoto, informa se sua ramificação local está atrás ou à frente do
+                      <i>branch</i> remoto.
+                      </dt>
+                  </dl>
+                </td>
+              </tr>
+              <tr>
+                <td>diff</td>
+                <td>Exibe uma listagem das diferenças entre duas versões do projeto
+                  (<i>commits</i>, ramificações etc.)
+                  <table>
+                    <thead>
+                      <th><b>git diff</b></th>
+                      <th><b>git diff [commit_1] [commit_2]</b></th>
+                      <th><b>git diff [arquivo]</b></th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          Mostra as diferenças entre os
+                          arquivos no seu diretório e os arquivos no stage. 
+                        </td>
+                        <td>
+                          Exibe as diferenças entre dois <i>commits</i> específicos. 
+                        </td>
+                        <td>
+                          Exibe as diferenças de um arquivo específico entre seu diretório e o <i>stage</i>.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>rm</td>
+                <td>
+                  Remove um ou mais arquivo(s) do repositório, atualizando o índice de
+                  <i>staging</i> e o diretório de trabalho. Essa mudança só será salva no histórico de
+                  <i>commits</i>, contudo, quando o comando <i>commit</i> for executado.
+                </td>
+              </tr>
+              <tr>
+                <td>config</td>
+                <td>
+                  Quando utilizado com parâmetros específicos, permite a alteração de
+                  configurações do Git, cuja listagem pode ser acessada pelo comando <i>git config –-list</i>.
+                  Algumas das opções que podem ser alteradas são:
+                  <table>
+                    <thead>
+                      <th><b>git config --global user.name <i>"nome"</i></b></th>
+                      <th><b>git config --global user.email <i>"e-mail"</i></b></th>
+                      <th><b>git config --global core.editor <i>[editor]</i></b></th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          Configura o seu nome de usuário no Git.
+                        </td>
+                        <td>
+                          Configura o seu e-mail.
+                        </td>
+                        <td>
+                          Altera o editor de texto padrão do Git. O editor de texto será 
+                          utilizado para fazer comentários nos <i>commits</i>.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>blame</td>
+                <td>Exibe os metadados do autor anexados a linhas de <i>commits</i> específicas
+                  em um arquivo, possibilitando assim que sejam acessíveis informações a respeito do
+                  responsável pela modificação de uma parte do arquivo em um <i>commit</i>. Esse
+                  comando funcionará apenas seguido do nome do arquivo, exibindo-o assim linha a
+                  linha com seus metadados.
+                  </td>
+              </tr>
+              <tr>
+                <td>tags</td>
+                <td>
+                  Cria, lista e exclui tags. Tags são utilizadas para marcar versões (<i>commits</i>)
+                  importantes no histórico de um projeto. Ao contrário das ramificações, tags não
+                  possuem histórico posterior após sua criação.
+                  <table>
+                    <thead>
+                      <th><b>git tag</b></th>
+                      <th><b>git tag <i>[nome]</i></b></th>
+                      <th><b>git tag <i>[nome]</i> -m <i>"mensagem"</i></b></th>
+                      <th><b>git tag -d <i>[nome]</i></b></th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          Exibe uma lista das tags do repositório.
+                        </td>
+                        <td>
+                          Cria uma tag com o nome especificado para marcar o <i>commit</i> em que 
+                          o comando foi chamado.
+                        </td>
+                        <td>
+                          Cria uma tag anotada com <i>"mensagem".</i>
+                        </td>
+                        <td>
+                          Exclui uma tag.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>help</td>
+                <td>Lista informações e descrições dos comandos Git disponíveis. Caso seja
+                  inserido o nome de um comando como parâmetro, abre uma descrição detalhada do
+                  comando.
+                </td>
+              </tr>
+              <tr>
+                <td>reset</td>
+                <td>
+                  Desfaz alterações em arquivos, <i>commits</i> e <i>stage</i>.
+                  <table>
+                    <thead>
+                      <th><b>git reset <i>[arquivo]</i></b></th>
+                      <th><b>git reset HEAD <i>[arquivo]</i></b></th>
+                      <th><b>git reset HEAD~1</b></th>
+                      <th><b>git reset --hard HEAD~1</b></th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          Remove um arquivo do <i>stage</i>, mantendo-o inalterado no diretório.
+                        </td>
+                        <td>
+                          Restaura o arquivo no seu diretório a partir de sua versão salva no <i>stage</i>.
+                        </td>
+                        <td>
+                          Desfaz o último <i>commit</i>, mantendo os arquivos inalterados em seu diretório.
+                        </td>
+                        <td>
+                          Desfaz o último <i>commit</i>, removendo de seu diretório as alterações feitas por ele.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>rebase</td>
+                <td>Altera o histórico do projeto, alterando a base da ramificação atual para
+                  um outro <i>commit</i>, de outra ramificação, cujo nome é passado como parâmetro para o
+                  comando. <br><br><i>git rebase [nome-do-commit]</i></td>
+              </tr>
+              </tbody>
+          </table>
+        </div>
+        <h1 class="texto_meio3" id="Pratica">Veja na prática</h1>
+        <div class="botoes">
+            <div class="botoes-lado-a-lado">
+                <a class="botao" href="video.html">
+                    <img class="icon" src="./img/iconPlayCircle.svg" alt="">
+                    Video
+                </a>
+                <a class="botao" href="audio.html">
+                    <img class="icon" src="./img/iconPlayAudio.svg" alt="">
+                    Audio
+                </a>
+            </div>
+            <a class="botao" href="https://drive.google.com/drive/folders/1917XAzKLJBSb-anQ56_NsksBYHIvDCSe" target="blank">
+                <img class="icon" src="./img/iconCloud.svg" alt="">
+                Google Drive
+            </a>    
+        </div>
+    </div>
+    <footer>
+        <p><i>Desenvolvido por Davi Azarias e Vinicius Ribeiro</i></p>
+    </footer>
+</body>
+</html>
